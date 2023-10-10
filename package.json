@@ -1,0 +1,32 @@
+{
+  "name": "compose-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "start": "npm run start --workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emily-Waters/compose-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emily-Waters/compose-test/issues"
+  },
+  "homepage": "https://github.com/Emily-Waters/compose-test#readme",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "ts-node": "^10.9.1"
+  }
+}

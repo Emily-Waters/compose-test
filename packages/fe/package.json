@@ -1,0 +1,24 @@
+{
+  "name": "@compose-test/fe",
+  "version": "1.0.0",
+  "description": "frontend for compose-test",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emily-Waters/compose-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emily-Waters/compose-test/issues"
+  },
+  "homepage": "https://github.com/Emily-Waters/compose-test#readme",
+  "dependencies": {
+    "@compose-test/utils": "file:../utils"
+  }
+}
