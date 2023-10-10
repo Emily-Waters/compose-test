@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./src",
     "outDir": "./public/build",
-    "composite": true
+    "composite": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
   }
 }
