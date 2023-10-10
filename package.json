@@ -9,7 +9,10 @@
   ],
   "scripts": {
     "build": "tsc --build --verbose",
-    "start": "npm run start --workspaces"
+    "start": "npm run start --workspaces",
+    "be": "npm --workspace=@compose-test/be",
+    "fe": "npm --workspace=@compose-test/fe",
+    "utils": "npm --workspace=@compose-test/utils"
   },
   "repository": {
     "type": "git",

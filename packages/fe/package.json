@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Emily-Waters/compose-test#readme",
   "dependencies": {
-    "@compose-test/utils": "file:../utils"
+    "@compose-test/utils": "file:../utils",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

@@ -20,6 +20,7 @@
     {
       "path": "./packages/be"
     },
+
     {
       "path": "./packages/fe"
     }
