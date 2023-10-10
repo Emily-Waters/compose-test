@@ -4,8 +4,8 @@
   "description": "frontend for compose-test",
   "main": "build/index.js",
   "scripts": {
-    "build": "tsc --build",
-    "start": "ts-node src/index.ts"
+    "build": "esbuild src/index.tsx --bundle --outfile=public/index.js",
+    "start": ""
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,12 @@
   "homepage": "https://github.com/Emily-Waters/compose-test#readme",
   "dependencies": {
     "@compose-test/utils": "file:../utils",
+    "esbuild": "^0.19.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.27",
+    "@types/react-dom": "^18.2.12"
   }
 }

@@ -1,5 +1,18 @@
-import { sayHello } from "@compose-test/utils";
+import express from "express";
 
-console.log("hello world from be");
+async function main() {
+  const app = express();
 
-sayHello();
+  app.use(express.static("../fe/public"));
+
+  // app.get("/", (req, res) => {
+  //   console.log("got /");
+  //   res.end();
+  // });
+
+  app.listen(3000, () => {
+    console.log("listening on port 3000");
+  });
+}
+
+main();
