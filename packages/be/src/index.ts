@@ -3,16 +3,23 @@ import express from "express";
 async function main() {
   const app = express();
 
-  app.use(express.static("../fe/public"));
+  app.use(ErrorHandlingMiddleware);
 
-  // app.get("/", (req, res) => {
-  //   console.log("got /");
-  //   res.end();
-  // });
+  app.get("/", (req, res) => {
+    console.log("GET /");
+    res.end();
+  });
 
-  app.listen(3000, () => {
-    console.log("listening on port 3000");
+  app.listen(8000, () => {
+    console.log("listening on port 8000");
   });
 }
 
 main();
+
+function ErrorHandlingMiddleware(err: any, req: any, res: any, next: any) {
+  if (res.headersSent) return next(err);
+
+  console.error(err);
+  res.end(500);
+}

@@ -5,9 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "build": "tsc --build",
-    "start": "ts-node src/index.ts"
+    "start": "node build/index.ts"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Emily-Waters/compose-test.git"
@@ -18,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Emily-Waters/compose-test/issues"
   },
-  "homepage": "https://github.com/Emily-Waters/compose-test#readme"
+  "homepage": "https://github.com/Emily-Waters/compose-test#readme",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
 }
