@@ -15,8 +15,7 @@ COPY . .
 
 RUN npm run build --verbose
 
-# Expose the port your Express app is running on
-EXPOSE 8080
+
 
 # Start the application
 CMD ["npm", "start"]

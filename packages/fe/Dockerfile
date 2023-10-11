@@ -15,8 +15,7 @@ COPY . .
 
 RUN npm run build --verbose
 
-# # Expose the port your React app is running on
-EXPOSE 3000
+
 
 # Start the application
 CMD ["npm", "start"]
