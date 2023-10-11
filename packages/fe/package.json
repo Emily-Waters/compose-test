@@ -1,5 +1,5 @@
 {
-  "proxy": "http://backend:5000",
+  "proxy": "http://backend:8080",
   "name": "@compose-test/fe",
   "version": "1.0.0",
   "description": "frontend for compose-test",
