@@ -5,7 +5,7 @@
   "description": "frontend for compose-test",
   "main": "public/index.js",
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --outfile=dist/index.js"
+    "build": "esbuild src/index.tsx --bundle --outfile=public/index.js"
   },
   "repository": {
     "type": "git",
