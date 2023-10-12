@@ -1,23 +1,23 @@
 {
   "proxy": "http://backend:8080",
-  "name": "@compose-test/fe",
+  "name": "@engram-compose/fe",
   "version": "1.0.0",
-  "description": "frontend for compose-test",
+  "description": "frontend for engram-compose",
   "main": "public/index.js",
   "scripts": {
     "build": "esbuild src/index.tsx --bundle --outfile=public/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Emily-Waters/compose-test.git"
+    "url": "git+https://github.com/Emily-Waters/engram-compose.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Emily-Waters/compose-test/issues"
+    "url": "https://github.com/Emily-Waters/engram-compose/issues"
   },
-  "homepage": "https://github.com/Emily-Waters/compose-test#readme",
+  "homepage": "https://github.com/Emily-Waters/engram-compose#readme",
   "dependencies": {
     "esbuild": "^0.19.4",
     "react": "^18.2.0",

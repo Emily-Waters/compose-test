@@ -1,5 +1,5 @@
 {
-  "name": "compose-test",
+  "name": "engram-compose",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,21 +10,21 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "start": "npm run start --workspaces",
-    "be": "npm --workspace=@compose-test/be",
-    "fe": "npm --workspace=@compose-test/fe",
-    "utils": "npm --workspace=@compose-test/utils"
+    "be": "npm --workspace=@engram-compose/be",
+    "fe": "npm --workspace=@engram-compose/fe",
+    "utils": "npm --workspace=@engram-compose/utils"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Emily-Waters/compose-test.git"
+    "url": "git+https://github.com/Emily-Waters/engram-compose.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Emily-Waters/compose-test/issues"
+    "url": "https://github.com/Emily-Waters/engram-compose/issues"
   },
-  "homepage": "https://github.com/Emily-Waters/compose-test#readme",
+  "homepage": "https://github.com/Emily-Waters/engram-compose#readme",
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.2.2",

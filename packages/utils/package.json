@@ -1,7 +1,7 @@
 {
-  "name": "@compose-test/utils",
+  "name": "@engram-compose/utils",
   "version": "1.0.0",
-  "description": "utils for compose-test",
+  "description": "utils for engram-compose",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --build",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Emily-Waters/compose-test.git"
+    "url": "git+https://github.com/Emily-Waters/engram-compose.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Emily-Waters/compose-test/issues"
+    "url": "https://github.com/Emily-Waters/engram-compose/issues"
   },
-  "homepage": "https://github.com/Emily-Waters/compose-test#readme",
+  "homepage": "https://github.com/Emily-Waters/engram-compose#readme",
   "dependencies": {
     "typescript": "^5.2.2"
   }

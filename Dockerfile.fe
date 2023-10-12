@@ -12,4 +12,4 @@ RUN npm install
 RUN npm run build 
 
 # Add any additional setup or configuration specific to this workspace
-CMD [ "npm", "run", "start", "--workspace=@compose-test/fe" ]
+CMD [ "npm", "run", "start", "--workspace=@engram-compose/fe" ]
