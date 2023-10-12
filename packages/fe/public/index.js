@@ -24404,7 +24404,7 @@
   // src/App.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "Hello, world" });
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: "Hello, docker compose!" });
   }
 
   // src/index.tsx

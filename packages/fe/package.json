@@ -3,10 +3,9 @@
   "name": "@compose-test/fe",
   "version": "1.0.0",
   "description": "frontend for compose-test",
-  "main": "build/index.js",
+  "main": "public/index.js",
   "scripts": {
-    "build": "tsc --build --verbose && esbuild src/index.tsx --bundle --outfile=public/index.js",
-    "start": "serve public -l 3000"
+    "build": "esbuild src/index.tsx --bundle --outfile=dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +22,7 @@
     "esbuild": "^0.19.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "serve": "^14.2.1",
-    "typescript": "^5.2.2"
+    "serve": "^14.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.27",

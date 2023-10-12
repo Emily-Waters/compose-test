@@ -2,10 +2,10 @@
   "name": "@compose-test/utils",
   "version": "1.0.0",
   "description": "utils for compose-test",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc --build",
-    "start": "node build/index.ts"
+    "start": "node dist/index.ts"
   },
   "repository": {
     "type": "git",

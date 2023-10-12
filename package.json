@@ -25,10 +25,9 @@
     "url": "https://github.com/Emily-Waters/compose-test/issues"
   },
   "homepage": "https://github.com/Emily-Waters/compose-test#readme",
-  "dependencies": {
-    "typescript": "^5.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "typescript": "^5.2.2",
     "@types/node": "^20.8.4",
     "ts-node": "^10.9.1"
   }

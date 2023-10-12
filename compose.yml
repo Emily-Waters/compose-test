@@ -1,30 +1,31 @@
-# version: "3"
 services:
-  backend:
-    image: "compose-test/backend"
-    build:
-      context: ./packages/be
-      dockerfile: ./Dockerfile
-    ports:
-      - "8080:8080"
-    develop:
-      watch:
-        - action: rebuild
-          service: backend
-          files:
-            - ./packages/be/src
   frontend:
-    image: "compose-test/frontend"
     build:
-      context: ./packages/fe
-      dockerfile: ./Dockerfile
+      context: .
+      dockerfile: Dockerfile.fe
     ports:
-      - "3000:3000"
-    links:
-      - backend
+      - 3000:3000
     develop:
       watch:
+        - action: sync
+          path: ./app
+          target: /app
+          ignore:
+            - node_modules/
         - action: rebuild
-          service: frontend
-          files:
-            - ./packages/fe/src
+          path: .
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.be
+    ports:
+      - 8080:8080
+    develop:
+      watch:
+        - action: sync
+          path: ./app
+          target: /app
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: .
