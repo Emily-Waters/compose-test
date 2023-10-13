@@ -5,7 +5,8 @@
   "description": "frontend for engram-compose",
   "main": "public/index.js",
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --outfile=public/index.js"
+    "build": "node esbuild.mjs",
+    "dev": "node esbuild.mjs --watch"
   },
   "repository": {
     "type": "git",
