@@ -12,7 +12,6 @@ RUN npm install
 
 RUN npm run build
 
-EXPOSE 8000
 
 # Add any additional setup or configuration specific to this workspace
 CMD [ "npm", "run", "start", "--workspace=@engram-compose/be" ]
