@@ -5,7 +5,24 @@ services:
       dockerfile: Dockerfile.fe
     ports:
       - ${PORT}:80
+    develop:
+      watch:
+        - action: rebuild
+          path: ./packages/fe
+        - action: rebuild
+          path: ./packages/utils
+        - action: rebuild
+          path: package.json
+
   backend:
     build:
       context: .
       dockerfile: Dockerfile.be
+    develop:
+      watch:
+        - action: rebuild
+          path: ./packages/be
+        - action: rebuild
+          path: ./packages/utils
+        - action: rebuild
+          path: package.json
