@@ -11,12 +11,11 @@ async function main() {
   });
 
   app.get("/test", (req, res) => {
-    console.log("test route");
     res.end();
   });
 
-  app.listen(8080, () => {
-    console.log("listening on port 8080");
+  app.listen(8000, () => {
+    console.log("listening on port 8000");
   });
 }
 

@@ -1,3 +1,3 @@
 export default function App() {
-  return <div>Hello, docker compose???XXX!</div>;
+  return <div>Hello, engram-compose!</div>;
 }

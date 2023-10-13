@@ -4,28 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile.fe
     ports:
-      - 3000:3000
-    develop:
-      watch:
-        - action: sync
-          path: ./app
-          target: /app
-          ignore:
-            - node_modules/
-        - action: rebuild
-          path: .
+      - 80:80
   backend:
     build:
       context: .
       dockerfile: Dockerfile.be
-    ports:
-      - 8080:8080
-    develop:
-      watch:
-        - action: sync
-          path: ./app
-          target: /app
-          ignore:
-            - node_modules/
-        - action: rebuild
-          path: .
