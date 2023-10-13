@@ -10,7 +10,8 @@ COPY ./packages/utils ./packages/utils
 
 RUN npm install 
 
-RUN npm run build 
+RUN npm run build --workspace=@engram-compose/utils
+RUN npm run build --workspace=@engram-compose/be
 
 EXPOSE 8000
 
