@@ -5,7 +5,6 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 COPY ./packages/be ./packages/be
-COPY ./packages/utils ./packages/utils
 
 RUN npm install 
 

@@ -5,7 +5,6 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 COPY ./packages/fe ./packages/fe
-COPY ./packages/utils ./packages/utils
 
 RUN npm install 
 RUN npm run build 

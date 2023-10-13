@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Emily-Waters/engram-compose#readme",
   "dependencies": {
+    "@engram-compose/utils": "^1.0.0",
     "esbuild": "^0.19.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
