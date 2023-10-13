@@ -10,8 +10,7 @@ COPY ./packages/utils ./packages/utils
 
 RUN npm install 
 
-RUN npm run build
-
+RUN npm run build 
 
 # Add any additional setup or configuration specific to this workspace
 CMD [ "npm", "run", "start", "--workspace=@engram-compose/be" ]
