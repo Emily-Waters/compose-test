@@ -1,3 +1,3 @@
-export function sayHello() {
-  console.log("hello world, imported from utils");
+export function sayHello(location: string) {
+  console.log(`hello engram-compose ${location}, imported from utils`);
 }

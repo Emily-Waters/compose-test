@@ -18,7 +18,5 @@
     "url": "https://github.com/Emily-Waters/engram-compose/issues"
   },
   "homepage": "https://github.com/Emily-Waters/engram-compose#readme",
-  "dependencies": {
-    "typescript": "^5.2.2"
-  }
+  "dependencies": {}
 }

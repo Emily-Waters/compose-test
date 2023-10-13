@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile.fe
     ports:
-      - 80:80
+      - ${PORT}:80
   backend:
     build:
       context: .
